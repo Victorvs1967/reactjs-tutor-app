@@ -14,8 +14,10 @@ import './App.css';
 // import RefsDemo from './components/RefsDemo';
 // import FocusInput from './components/FocusInput';
 // import PortalDemo from './components/PortalDemo';
-import Villain from './components/Villain';
-import ErrorBoundary from './components/ErrorBoundary';
+// import Villain from './components/Villain';
+// import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 const App = () => (
   <div className="App">
@@ -41,11 +43,13 @@ const App = () => (
     {/* <RefsDemo /> */}
     {/* <FocusInput /> */}
     {/* <PortalDemo /> */}
-    <ErrorBoundary>
+    {/* <ErrorBoundary>
       <Villain villainName='Jocker' />
       <Villain villainName='Biddler' />
       <Villain villainName='Batman' />
-    </ErrorBoundary>
+    </ErrorBoundary> */}
+    <ClickCounter name='Victor' />
+    <HoverCounter />
   </div>
 );
 
