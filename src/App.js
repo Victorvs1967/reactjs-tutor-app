@@ -18,9 +18,11 @@ import './App.css';
 // import ErrorBoundary from './components/ErrorBoundary';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
-import ClickCounter2 from './components/ClickCounter2';
-import HoverCounter2 from './components/HoverCounter2';
-import CounterRender from './components/CounterRender'
+// import ClickCounter2 from './components/ClickCounter2';
+// import HoverCounter2 from './components/HoverCounter2';
+// import CounterRender from './components/CounterRender'
+import GrandParent from './components/GrandParent';
+import { UserProvider } from './components/userContext';
 
 const App = () => (
   <div className="App">
@@ -53,12 +55,15 @@ const App = () => (
     </ErrorBoundary> */}
     {/* <ClickCounter name='Victor' />
     <HoverCounter /> */}
-    <CounterRender render={(count, incrementCount) => (
+    {/* <CounterRender render={(count, incrementCount) => (
       <ClickCounter2 count={count} incrementCount={incrementCount} />
     )} />
     <CounterRender render={(count, incrementCount) => (
       <HoverCounter2 count={count} incrementCount={incrementCount} />
-    )} />
+    )} /> */}
+    <UserProvider value='Habendu'>
+      <GrandParent />
+    </UserProvider>
   </div>
 );
 
