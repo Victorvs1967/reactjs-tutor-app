@@ -1,0 +1,11 @@
+h1 {
+    font-size: 64px;
+}
+.primary {
+    color: orangered;
+}
+.secondary {
+    color: blueviolet;
+    width: 90%;
+    margin: auto;
+}
