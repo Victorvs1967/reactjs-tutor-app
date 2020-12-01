@@ -16,8 +16,11 @@ import './App.css';
 // import PortalDemo from './components/PortalDemo';
 // import Villain from './components/Villain';
 // import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverCounter2 from './components/HoverCounter2';
+import CounterRender from './components/CounterRender'
 
 const App = () => (
   <div className="App">
@@ -48,8 +51,14 @@ const App = () => (
       <Villain villainName='Biddler' />
       <Villain villainName='Batman' />
     </ErrorBoundary> */}
-    <ClickCounter name='Victor' />
-    <HoverCounter />
+    {/* <ClickCounter name='Victor' />
+    <HoverCounter /> */}
+    <CounterRender render={(count, incrementCount) => (
+      <ClickCounter2 count={count} incrementCount={incrementCount} />
+    )} />
+    <CounterRender render={(count, incrementCount) => (
+      <HoverCounter2 count={count} incrementCount={incrementCount} />
+    )} />
   </div>
 );
 
